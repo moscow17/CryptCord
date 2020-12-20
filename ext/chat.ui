@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <resources>
+    <color name="tableHead">#242526</color>
+</resources>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="CryptCord">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>304</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="send_message">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>360</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="friends">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>301</width>
+      <height>351</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>304</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFriends">
+    <property name="title">
+     <string>Friends</string>
+    </property>
+    <addaction name="add_friend"/>
+    <addaction name="show_friends"/>
+    <addaction name="message_friend"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFriends"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuTools"/>
+  </widget>
+  <action name="add_friend">
+   <property name="text">
+    <string>Add friend</string>
+   </property>
+  </action>
+  <action name="show_friends">
+   <property name="text">
+    <string>Show friends</string>
+   </property>
+  </action>
+  <action name="message_friend">
+   <property name="text">
+    <string>Message friend</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
